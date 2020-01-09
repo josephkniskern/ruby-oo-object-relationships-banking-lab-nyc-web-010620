@@ -1,4 +1,4 @@
-require "bank_account.rb"
+require_relative "bank_account.rb"
 
 class Transfer
 
