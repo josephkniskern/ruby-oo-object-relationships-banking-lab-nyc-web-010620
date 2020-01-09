@@ -1,4 +1,4 @@
-require_relative "./bank_account.rb"
+#require_relative "./bank_account.rb"
 
 class Transfer
 
@@ -16,9 +16,9 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? && balance.sender >= amount && self.status == "pending"
-      sender.balance -= amount
-      receiver.balance += amount
+    if valid? && @balance.sender >= amount && self.status == "pending"
+      sender.@balance -= amount
+      receiver.@balance += amount
     else
       "Transaction rejected. Please check your account balance."
     end
