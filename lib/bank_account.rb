@@ -21,6 +21,7 @@ class BankAccount
     if balance > 0 && status == "open"
       return true
     end
+    false
   end
 
 end
