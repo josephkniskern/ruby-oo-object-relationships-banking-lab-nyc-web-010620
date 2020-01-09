@@ -1,3 +1,5 @@
+require_relative "./bank_account.rb"
+
 class Transfer
 
   attr_accessor :sender, :receiver, :amount, :status
@@ -10,6 +12,6 @@ class Transfer
   end
 
   def valid?
-    
+
   end
 end
