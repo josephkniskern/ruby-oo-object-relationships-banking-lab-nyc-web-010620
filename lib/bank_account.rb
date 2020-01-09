@@ -13,4 +13,8 @@ class BankAccount
     @balance = balance + deposit
   end
 
+  def display_balance
+    puts @balance
+  end
+
 end
